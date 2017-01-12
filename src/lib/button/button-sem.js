@@ -25,6 +25,7 @@ export const InfoButton = {
 
 import Button from './button.vue'
 import './button-sem.css';
+
 export const WarningButton = {
   render(h) {
     return h(
@@ -35,6 +36,7 @@ export const WarningButton = {
     )
   }
 }
+
 export const DangerButton = {
   functional: true,
   name: 'danger-button',
@@ -42,3 +44,4 @@ export const DangerButton = {
     class: ['danger']
   }, context.slots().default)
 }
+
