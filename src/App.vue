@@ -8,7 +8,7 @@
     </header>
     <hr>
     <section>
-      <buttons></buttons>
+      <buttons @v-click="clickHandler"></buttons>
     </section>
   </div>
 </template>
@@ -19,6 +19,11 @@ export default {
   name: 'app',
   components: {
     Buttons
+  },
+  methods: {
+    clickHandler(){
+      console.log('app')
+    }
   }
 }
 </script>

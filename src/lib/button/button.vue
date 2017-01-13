@@ -4,8 +4,17 @@
         render(h) {
             return h('a',
                 {
-                    class: ['button']
+                    class: ['button'],
+                    on: {
+                        click: this.clickHandler
+                    }
                 }, this.$slots.default)
+        },
+        methods: {
+            clickHandler(){
+                console.log('button click')
+                this.$emit('v-click');
+            }
         }
     }
 </script>
