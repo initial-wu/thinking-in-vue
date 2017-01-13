@@ -1,39 +1,12 @@
-import TypeButton from './button-type.vue';
-
-export const SuccessButton = {
-  name: 'success-button',
-  functional: true,
-  render: (h, context) => h(TypeButton, {
-    props: {
-      type: 'success'
-    }
-  }, context.slots().default)
-}
-export const InfoButton = {
-  name: 'info-button',
-  render(h) {
-    return h(
-      TypeButton, {
-        props: {
-          type: 'info'
-        }
-      },
-      this.$slots.default
-    )
-  }
-}
-
 import Button from './button.vue'
 import './button-sem.css';
 
 export const WarningButton = {
+  name: 'warning-button',
   render(h) {
-    return h(
-      Button, {
-        class: ['warning']
-      },
-      this.$slots.default
-    )
+    return h(Button, {
+      class: ['warning']
+    }, this.$slots.default)
   }
 }
 
@@ -44,4 +17,3 @@ export const DangerButton = {
     class: ['danger']
   }, context.slots().default)
 }
-
