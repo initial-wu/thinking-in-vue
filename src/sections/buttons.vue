@@ -50,6 +50,7 @@
             <info-button-g>info</info-button-g>
             <ok-button-g>ok</ok-button-g>
             <cancel-button-g>cancel</cancel-button-g>
+        </sub-section>
     </div>
     </div>
 </template>
